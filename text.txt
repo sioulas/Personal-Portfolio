@@ -1,0 +1,44 @@
+/*experience*/
+<div class="experience">
+  <h3 class="info__title">Experience</h3>
+  <div class="experience__content grid">
+    <div class="experience__data grid">
+      <h2 class="experience__company">MplaMpla</h2>
+      <div>
+        <h3 class="experience__profession">Mpla</h3>
+        <span class="experience__date">Mpla</span>
+        <p class="experience__description">
+          Mpla
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+css: 
+
+/*experience*/
+
+.experience__content {
+  row-gap: 2rem;
+}
+
+.experience__data {
+  row-gap: 1rem;
+}
+
+.experience__company {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+}
+
+.experience__profession {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.experience__date {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.75rem;
+}

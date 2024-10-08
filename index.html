@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Konstantinos Sioulas - Home</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Sioulas Konstantinos</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li>
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li>
+              <a href="#info" class="nav__link">About</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link">Contact Me</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="bi bi-x-lg"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bi bi-menu-down"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <img
+            src="./assets/images/Ntinaros.png"
+            alt="image"
+            class="home__image"
+            title="Sioulas Konstantinos - image"
+          />
+          <div class="home__data">
+            <h1 class="home__name">Sioulas Konstantinos</h1>
+            <h3 class="home__profession">Software Engineer</h3>
+          </div>
+          <a href="#work" class="home__scroll">
+            <div class="home__scroll-box">
+              <i class="bi bi-arrow-bar-down"></i>
+            </div>
+            <span class="home__scroll-text">Work</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <h2 class="section__title">RECENT WORKS</h2>
+        <div class="work__container container grid">
+          <article class="work__card">
+            <a href="#" target="_blank" class="work__link">
+              <h2 class="work__title">Marvel Comics Quiz</h2>
+              <p class="work__description">An app developed in Kotlin using Marvel Comic’s public API to fetch all of its heroes’ details and data in order
+                to create a mini and fun quiz.</p>
+              <img src="./assets/images/Marvel-Comics.jpg" alt="image" class="work__image">
+              <i class="bi bi-arrow-bar-right"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a href="#" target="_blank" class="work__link">
+              <h2 class="work__title">Battleship Game</h2>
+              <p class="work__description">This project is a web-based version of the classic Battleship game, featuring a simple layout with a login system and a basic ruleset.</p>
+              <img src="./assets/images/battleship.jpg" alt="image" class="work__image">
+              <i class="bi bi-arrow-bar-right"></i>
+            </a>
+          </article>
+
+          <article class="work__card">
+            <a href="#" target="_blank" class="work__link">
+              <h2 class="work__title">Tic Tac Toe</h2>
+              <p class="work__description">Designed, implemented and presented a complete working model of a Tic-Tac-Toe game in Java and the
+                graphical user interface was done in Java Swing.</p>
+              <img src="./assets/images/tictactoe.png" alt="image" class="work__image">
+              <i class="bi bi-arrow-bar-right"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="info section" id="info">
+        <h2 class="section__title">MY INFO</h2>
+        <div class="info__container container grid">
+          <div class="about grid">
+            <div class="about__content">
+              <h3 class="info__title">About Me</h3>
+              <p class="about__description">
+                Passionate about becoming a <b>Software Engineer</b>. My work experience
+                is limited but I am devoted to start my journey, to learn and
+                delve into new things!
+              </p>
+              <a href="./assets/cv/Sioulas Konstantinos CV.pdf" download="" class="button about__button">
+                Download My CV
+              </a>
+            </div>
+            <img src="./assets/images/Ntinaros.png" alt="" class="about__image" />
+          </div>
+          
+          <div class="skills">
+            <h3 class="info__title">Skills</h3>
+            <div class="skills__content grid">
+              <div class="skills__box">
+                <img src="./assets/skills/html-5-svgrepo-com.svg" alt="image" class="skills__image">
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__box">
+                <img src="./assets/skills/css-3-svgrepo-com.svg" alt="image" class="skills__image">
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__box">
+                <img src="./assets/skills/javascript-svgrepo-com.svg" alt="image" class="skills__image">
+                <span class="skills__name">JavaScript</span>
+              </div>
+              <div class="skills__box">
+                <img src="./assets/skills/github-142-svgrepo-com.svg" alt="image" class="skills__image">
+                <span class="skills__name">Github</span>
+              </div>
+              <div class="skills__box">
+                <img src="./assets/skills/java-logo-svgrepo-com.svg" alt="image" class="skills__image">
+                <span class="skills__name">Java</span>
+              </div>
+              <div class="skills__box">
+                <img src="./assets/skills/sql-database-sql-azure-svgrepo-com.svg" alt="image" class="skills__image">
+                <span class="skills__name">SQL</span>
+              </div>
+              <div class="skills__box">
+                <img src="./assets/skills/kotlin-svgrepo-com.svg" alt="image" class="skills__image">
+                <span class="skills__name">Kotlin</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contact section contact" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <div class="contact__container container grid">
+            <form action="" class="contact__form grid" id="contact-form">
+                <div class="contact__group grid">
+                  <input type="text" name="user_name" placeholder="Name / Names " required class="contact__input">
+                  <input type="text" name="user_email" placeholder="Email" required class="contact__input">
+                </div>
+                <textarea name="user_message" placeholder="Message" required class="contact__input contact__area"></textarea>
+                <button type="submit" class="button contact__button"">
+                  Send Message
+                </button>
+                <p class="contact__message" id="contact-message"></p>
+            </form>  
+            <div class="contact__social grid">
+              <a href="" target="_blank" class="contact__social-link">
+                <i class="bi bi-linkedin"></i>
+                <span>Linkedin</span>
+              </a>
+              <a href="" target="_blank" class="contact__social-link">
+                <i class="bi bi-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="" target="_blank" class="contact__social-link">
+                <i class="bi bi-twitter-x"></i>
+                <span>X</span>
+              </a>
+            </div>                  
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#work" class="footer__link">Work</a>
+          </li>
+          <li>
+            <a href="#info" class="footer__link">Info</a>
+          </li>
+        </ul>
+        <span class="footer__copy">
+          &#169; All Rights Reserved By Sioulas Konstantinos
+        </span>
+      </div> 
+    </footer>
+
+    <a href="#" class="scrollup"" id="scroll-up">
+      <i class="bi bi-arrow-bar-up"></i>
+    </a>
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
