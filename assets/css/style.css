@@ -175,6 +175,13 @@ img {
 .nav__logo {
   color: var(--title-color);
   font-weight: var(--font-bold);
+  transition: color 0.4s ease, letter-spacing 0.4s ease;
+}
+
+.nav__logo:hover {
+  color: var(--first-color-light);
+  font-style: italic;
+  letter-spacing: 0.15rem;
 }
 
 .nav__toggle,
@@ -274,7 +281,8 @@ img {
   justify-self: center;
   mask-image: linear-gradient(
     to bottom,
-    hsla(var(--hue), 40%, 16%) 60% transparent 100%
+    hsla(var(--hue), 40%, 16%) 60%,
+    transparent 100%
   );
 }
 
@@ -501,15 +509,17 @@ img {
 }
 
 .contact__social-link {
-  color: var(--title-color);
+  position: relative;
   display: inline-flex;
-  column-gap: 0.25rem;
   align-items: center;
-  transition: color 0.4s;
+  column-gap: 0.25rem; /* Space between icon and text */
+  color: var(--title-color); /* Keep your original color */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+  font-family: inherit; /* Keep the original font settings */
 }
 
 .contact__social-link i {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Keep the icon size */
 }
 
 .contact__social-link span {
@@ -517,8 +527,39 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
+.contact__social-link:before {
+  content: "";
+  background: var(--first-color-light);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: width 0.3s ease-in-out;
+}
+/*
 .contact__social-link:hover {
-  color: var(--first-color-light);
+  color: var(--first-color-light); 
+}*/
+
+.contact__social-link:nth-child(1):hover {
+  color: #0077b5;
+}
+
+.contact__social-link:nth-child(2):hover {
+  color: #e4405f;
+}
+
+.contact__social-link:hover:before {
+  width: 100%;
+}
+
+.contact__social-link:nth-child(1):before {
+  background: #0077b5; /* LinkedIn */
+}
+
+.contact__social-link:nth-child(2):before {
+  background: #e4405f; /* Instagram */
 }
 
 .contact__message {
@@ -619,9 +660,13 @@ img {
 @media screen and (min-width: 540px) {
   .home__container,
   .work__container,
-  .info__container,
-  .contact__container {
+  .info__container {
     grid-template-columns: 350px;
+    justify-content: center;
+  }
+
+  .contact__container {
+    grid-template-columns: 450px;
     justify-content: center;
   }
 }
@@ -665,7 +710,7 @@ img {
   }
 
   .contact__social {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
     column-gap: 4rem;
   }
 }
@@ -710,7 +755,7 @@ img {
 
   .home__image {
     width: 350px;
-    height: 600px;
+    height: 100%;
   }
 
   .home__name {
@@ -795,8 +840,9 @@ img {
   }
 
   .contact__social {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
     column-gap: 5rem;
+    justify-content: center;
   }
 
   .scrollup {
