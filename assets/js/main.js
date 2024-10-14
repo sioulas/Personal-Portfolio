@@ -114,3 +114,26 @@ sr.reveal(".home__scroll", { delay: 800 });
 sr.reveal(".work__card", { interval: 100 });
 sr.reveal(".about__image", { origin: "right" });
 sr.reveal(".about__content", { origin: "left" });
+
+/*change title*/
+
+function updateTitle(sectionId) {
+  const capitalizedSection =
+    sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
+  document.title = `Konstantinos Sioulas - ${capitalizedSection}`;
+}
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        updateTitle(entry.target.id);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+document.querySelectorAll("section").forEach((section) => {
+  observer.observe(section);
+});

@@ -3,7 +3,7 @@
 :root {
   --header-height: 3.5rem;
 
-  --hue: 260;
+  --hue: 253;
   --first-color: hsl(var(--hue), 55%, 55%);
   --first-color-light: hsl(var(--hue), 55%, 65%);
   --first-color-alt: hsl(var(--hue), 50%, 50%);
@@ -315,7 +315,7 @@ img {
   column-gap: 0.5rem;
   align-items: center;
   justify-self: center;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .home__scroll-box {
@@ -755,7 +755,7 @@ img {
 
   .home__image {
     width: 350px;
-    height: 100%;
+    height: 105%;
   }
 
   .home__name {
